@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Verivox - Deepfake Voice Detection</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="mainCard">
+
+        <h1 class="logo">
+            <i class="fa-solid fa-microphone"></i> VERIVOX
+        </h1>
+
+        <p class="subtitle">AI Deepfake Voice Detection Tool</p>
+
+
+        <!-- Upload Audio -->
+        <div class="uploadBox">
+
+            <input type="file" id="audioFile" accept="audio/*">
+
+        </div>
+
+
+        <!-- Buttons -->
+        <div class="buttonGroup">
+
+            <button onclick="recordAudio()">
+                <i class="fa-solid fa-microphone"></i> Record Audio
+            </button>
+
+            <button onclick="predictSVM()">
+                Check with SVM
+            </button>
+
+            <button onclick="predictCNN()">
+                Check with CNN
+            </button>
+
+        </div>
+
+
+        <!-- Result -->
+        <div class="resultCard">
+
+            <h2 id="result">Upload or record audio to start</h2>
+
+            <br>
+
+            <audio id="audioPlayback" controls style="width:100%; display:none;"></audio>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+body {
+    background: #f5f7fb;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.mainCard {
+    background: white;
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+    width: 420px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+}
+
+.logo {
+    color: #0A66C2;
+    font-size: 34px;
+    margin-bottom: 5px;
+}
+
+.logo i {
+    margin-right: 10px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.uploadBox {
+    border: 2px dashed #0A66C2;
+    padding: 18px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    background: #fafcff;
+}
+
+input {
+    cursor: pointer;
+}
+
+.buttonGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+button {
+    background: #0A66C2;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background: black;
+    transform: scale(1.03);
+}
+
+.resultCard {
+    margin-top: 25px;
+    padding: 16px;
+    border-radius: 8px;
+    background: #f0f4ff;
+    border: 1px solid #d6e3ff;
+    font-size: 16px;
+    font-weight: 500;
+}
